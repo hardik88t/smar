@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+
+#logo {
+    position: absolute;
+    width: 345px;
+    height: 146px;
+
+    font-family: 'Iceland';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 150px;
+    /* line-height: 146px; */
+    /* identical to box height */
+    color: #5393F1;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* font-size: 50px;
+    font-weight: bold;
+    color: #4646ff;
+    text-align: center;
+    margin-top: 10px; */
+    text-decoration: underline;
+}
