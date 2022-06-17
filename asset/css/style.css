@@ -1,21 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /* make color variable in css*/
-
 
 body{
     margin: 0;
     padding: 10px;
     font-family: 'Poppins', sans-serif;
-}
-
-#input-el{
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid ;
-    margin: 0 0 10px 0;
 }
 
 button{
@@ -27,12 +18,31 @@ button{
     font-weight: bold;
     margin-bottom: 20px;
     border: 3px solid #5393F1;
+    border-radius: 5px;
+}
+
+
+#input-el{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid ;
+    margin: 0 0 10px 0;
+}
+
+#input-btn{
+    background: #5393F1;
+}
+#input-btn:hover{
+    background: #0c4396;
 }
 
 #delete-btn{
-    background: #FF0000;
+    background: #ea4848;
 }
-
+#delete-btn:hover{
+    background: #9d0a0a;
+}
 
 ul{
     list-style: none;
@@ -45,11 +55,6 @@ ul li{
 ul li a{
     color: #007306;
 }
-
-
-
-
-
 
 
 
