@@ -1,0 +1,9 @@
+{
+    "mainfest_version": 3,
+    "version": "1.0",
+    "name": "SMAR",
+    "action": {
+        "default_popup":"index.html",
+        "default_icon":"asset/img/s_.png",
+    }
+}
