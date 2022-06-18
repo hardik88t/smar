@@ -1,12 +1,19 @@
 {
     "manifest_version": 3,
-    "version": "1.3",
-    "name": "SMAR",
+    "name": "smar",
+    "version": "1.4",
     "action": {
-        "default_popup":"index.html",
-        "default_icon":"asset/img/s_.png"
+            "default_popup":"index.html",
+            "default_icon":"asset/img/s_.png"
     },
-    "permissions" : [
-        "tabs"
-    ]
+    "description": "smar is a Browser Extension For Saving Links",
+    "icons": {
+        "16": "asset/img/s_.png"
+    },
+    "author": "hardik88t",
+    "homepage_url": "https://hardik88t.github.io/smar/",
+    "offline_enabled": true,
+    "permissions": ["tabs"],
+    "short_name": "smar",
+    "version_name": "smar : A Smart way to save & Tabs"
 }

@@ -1,12 +1,10 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-/* make color variable in css*/
 
 body{
     margin: 0;
     padding: 10px;
     font-family: 'Poppins', sans-serif;
+    width: 450px;
 }
 
 button{
@@ -21,13 +19,23 @@ button{
     border-radius: 5px;
 }
 
+#container{
+    /* position:static */
+    position: relative;
+
+}
+
+#buttons{
+    display: flex;
+    justify-content: end;
+}
 
 #input-el{
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
     border: 1px solid ;
-    margin: 0 0 10px 0;
+    margin: 0 0px 10px 0;
 }
 
 #input-btn{
@@ -38,6 +46,7 @@ button{
 }
 
 #delete-btn{
+    margin-left: 10px;
     background: #ea4848;
 }
 #delete-btn:hover{
@@ -49,36 +58,14 @@ ul{
     padding: 0;
     margin: 0;
 }
-ul li{
+li{
     margin: 5px;
 }
-ul li a{
+a{
+    width: max-content;
     color: #007306;
 }
-
-
-
-/* 
-#hello{
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding-bottom: 5px;
-    font-size: 40px;
-    border: #079e0f solid 2px;
-}
-#logo {
-    position: absolute;
-    width: 345px;
-    height: 80px;
-    move up
-    top: -50px;
-    font-family: 'Iceland';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 100px;
-    line-height: 45px;
+a:hover{
+    font-weight: bold;
     color: #5393F1;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-   
-    text-decoration: underline;
-} 
-*/
+}

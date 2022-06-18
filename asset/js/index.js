@@ -15,7 +15,7 @@ if(localLinks){
 saveBtn.addEventListener("click", function() {
     //save current tab url
     if(inputEl.value === "") {
-        tabSaver();  
+            tabSaver();  
     }
     //save input value
     else{
@@ -25,6 +25,18 @@ saveBtn.addEventListener("click", function() {
         inputEl.focus();
         localStorage.setItem("smar", JSON.stringify(links));
         liPrinter(links);
+        messageDiv.innerHTML = 
+            `
+            <p  style=" padding: 2px;
+                        background: #5393F1;
+                        border: 2px solid #0c4396;
+                        border-radius: 3px;
+                        margin: 0;
+                        text-align: center;
+                    ">
+                    New Link Added
+            </p>
+            `
     }
 });
 
@@ -44,7 +56,7 @@ function liPrinter(ary){
     let linkItems = "";
     for (let i = 0; i < ary.length; i++) {
         linkItems += `
-                        <li>
+                        <li>=>
                             <a target='_blank' href='${ary[i]}'>
                                 ${ary[i]}
                             </a> 
@@ -52,17 +64,22 @@ function liPrinter(ary){
                     `
     }
     ulEl.innerHTML = linkItems;
+    
 }
 
 
 function tabSaver(){
     // save current tab url
-    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {            
             links.push(tabs[0].url);
             localStorage.setItem("smar", JSON.stringify(links));
+            inputEl.focus();
             liPrinter(links);
         }
     );
+
+
+
     messageDiv.innerHTML = 
     `
     <p  style=" padding: 2px;
