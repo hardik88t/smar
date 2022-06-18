@@ -8,7 +8,10 @@
     },
     "description": "smar is a Browser Extension For Saving Links",
     "icons": {
-        "16": "asset/img/s_.png"
+        "16": "asset/img/s_.png",
+        "32": "asset/img/s_.png",
+        "64": "asset/img/s_.png",
+        "128": "asset/img/s_.png"
     },
     "author": "hardik88t",
     "homepage_url": "https://hardik88t.github.io/smar/",
