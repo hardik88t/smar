@@ -1,10 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
 body{
     margin: 0;
     padding: 10px;
     font-family: 'Poppins', sans-serif;
     width: 450px;
+    /* background: #f5f5f5; */
+}
+
+#container{
+    /* position:static */
+    position: relative;
+    padding-bottom: 0%;
+
+}
+
+
+#input-el{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid ;
+}
+
+#buttons-container{
+    display: flex;
+    justify-content: end;
+    width: auto;
+}
+
+/* #profile-link */
+
+#logo-img {
+    /* logo design */
+    width: 128px;
+    object-fit: contain;
+}
+#logo-img:hover{
+    cursor: pointer;  
+    width: 133px;
+}
+/* onclick redirect to link */
+#logo-img:onclick{
+    /* redirect to link */
+    window.location.href = "https://www.google.com/";
 }
 
 button{
@@ -14,28 +53,13 @@ button{
     border: none;
     cursor: pointer;
     font-weight: bold;
-    margin-bottom: 20px;
     border: 3px solid #5393F1;
     border-radius: 5px;
-}
-
-#container{
-    /* position:static */
-    position: relative;
-
-}
-
-#buttons{
-    display: flex;
-    justify-content: end;
-}
-
-#input-el{
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid ;
-    margin: 0 0px 10px 0;
+    /* width: 70px; */
+    /* height: 30px; */
+    margin: 5px;
+    justify-content: center;
+    object-fit: contain;
 }
 
 #input-btn{
@@ -43,29 +67,38 @@ button{
 }
 #input-btn:hover{
     background: #0c4396;
+
 }
 
 #delete-btn{
-    margin-left: 10px;
+    margin-left: 5px;
     background: #ea4848;
 }
 #delete-btn:hover{
     background: #9d0a0a;
 }
 
-ul{
+#ul-el{
     list-style: none;
     padding: 0;
     margin: 0;
 }
-li{
+
+#li-el{
     margin: 5px;
 }
-a{
+
+#a-el{
     width: max-content;
     color: #007306;
 }
-a:hover{
+#a-el:hover{
     font-weight: bold;
     color: #5393F1;
+}
+
+#message{
+    font-family: 'iceland', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
 }

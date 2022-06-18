@@ -1,12 +1,12 @@
 {
     "manifest_version": 3,
     "name": "smar",
-    "version": "1.4",
+    "version": "1.5",
     "action": {
             "default_popup":"index.html",
             "default_icon":"asset/img/s_.png"
     },
-    "description": "smar is a Browser Extension For Saving Links",
+    "description": "smar - a smart way to manage links",
     "icons": {
         "16": "asset/img/s_.png",
         "32": "asset/img/s_.png",
