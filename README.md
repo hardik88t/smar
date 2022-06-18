@@ -1,4 +1,4 @@
-# [![smar](https://github.com/hardik88t/smar/blob/main/asset/img/smar_.svg)](https://github.com/hardik88t/smar)
+# [![smar](https://github.com/hardik88t/smar/blob/main/asset/img/smar_.png)](https://github.com/hardik88t/smar)
 
 ## smar is a Browser Extension For Saving Links & Tabs. <br/> smar ~ " स्मर " ( Hindi ) meaning " to remember ".
 ---
