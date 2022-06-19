@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "smar",
-    "version": "1.5",
+    "version": "1.6",
     "action": {
             "default_popup":"index.html",
             "default_icon":"asset/img/s_.png"

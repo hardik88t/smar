@@ -10,11 +10,31 @@
     </head>
 
     <body>
+        <!-- <style>
+            /* dark */
+
+            :root {
+                --bodyBg: #092f32;
+                --inputBg: #8488af;
+
+                --arrowCol: #ff5c5c;
+                --linkCol: #eae438;
+
+                --bigO: #cccccc;
+                --midO: #000000;
+                --smallO: #fefefe;
+            }
+        </style> -->
         <div id="container">
             <input type="text" id="input-el">
 
             <div id="buttons-container">
                 <!-- <a href="https://github.com/hardik88t/smar" id="profile-link"> -->
+                <svg id="theme-btn" height="50" width="50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle id="circle-1" cx="26" cy="26" r="15" fill-opacity="0.8" />
+                    <circle id="circle-2" cx="26" cy="26" r="14" />
+                    <circle id="circle-3" cx="26" cy="26" r="10" />
+                </svg>
                 <img id="logo-img" src="asset/img/smar_.png" alt="smar a smart way to save tab and urls" />
                 <!-- </a> -->
                 <!-- <div id="logo-txt">smar</div> -->
@@ -23,8 +43,15 @@
                 <button type="submit" id="delete-btn">Delete</button>
             </div>
         </div>
-        <ul id="ul-el"></ul>
-        <div id="message"></div>
+        <ul id="ul-el">
+            <!-- <li class="li-el" id="li-${i}">
+                <span class="delete-link" id="del-${i}"></span> <a href=""></a>
+            </li> -->
+        </ul>
+
+        <div id="message">
+
+        </div>
 
         <script src="asset/js/index.js"></script>
     </body>

@@ -1,59 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
-body{
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Iceland&display=swap");
+
+/* light  */
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+
+    --saveBtn: #5393f1;
+    --saveBtnDark: #0c4396;
+    --deleteBtn: #ea4848;
+    --deleteBtnDark: #9d0a0a;
+
+    --msgSave: #5393f1;
+    --msgDelete: #ea4848;
+    --msgLastDel: #eabf49;
+    --msgTab: #54ee2d;
+    --darkgreen: #007306;
+
+    --bodyBg: #ffffff;
+    --inputBg: #f4f3f3;
+
+    --arrowCol: #dd3030;
+    --linkCol: #272255;
+
+    --bigO: #cccccc;
+    --midO: #fefefe;
+    --smallO: #000000;
+}
+
+#circle-1 {
+    /* fill */
+    fill: var(--bigO);
+}
+#circle-2 {
+    /* fill */
+    fill: var(--midO);
+}
+#circle-3 {
+    /* fill */
+    fill: var(--smallO);
+}
+
+body {
+    background: var(--bodyBg);
     margin: 0;
     padding: 10px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     width: 450px;
+    /* borderbox */
+    box-sizing: border-box;
     /* background: #f5f5f5; */
 }
 
-#container{
-    /* position:static */
-    position: relative;
-    padding-bottom: 0%;
-
-}
-
-
-#input-el{
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid ;
-}
-
-#buttons-container{
-    display: flex;
-    justify-content: end;
-    width: auto;
-}
-
-/* #profile-link */
-
-#logo-img {
-    /* logo design */
-    width: 128px;
-    object-fit: contain;
-}
-#logo-img:hover{
-    cursor: pointer;  
-    width: 133px;
-}
-/* onclick redirect to link */
-#logo-img:onclick{
-    /* redirect to link */
-    window.location.href = "https://www.google.com/";
-}
-
-button{
-    background: #5393F1;
-    padding: 10px 20px ;
-    color: #fff;
+button {
+    padding: 10px 20px;
+    color: var(--white);
     border: none;
     cursor: pointer;
     font-weight: bold;
-    border: 3px solid #5393F1;
+    border: 3px solid var(--saveBtnDark);
     border-radius: 5px;
     /* width: 70px; */
     /* height: 30px; */
@@ -62,43 +68,110 @@ button{
     object-fit: contain;
 }
 
-#input-btn{
-    background: #5393F1;
-}
-#input-btn:hover{
-    background: #0c4396;
-
+#container {
+    /* position:static */
+    position: relative;
+    padding-bottom: 0%;
 }
 
-#delete-btn{
+#input-el {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-radius: 5px;
+    background: var(--inputBg);
+}
+
+#buttons-container {
+    display: flex;
+    justify-content: end;
+    /* width: auto; */
+}
+
+#theme-btn {
+    cursor: pointer;
+}
+
+#logo-img {
+    /* logo design */
+    width: 128px;
+    object-fit: contain;
+}
+#logo-img:hover {
+    cursor: pointer;
+    width: 133px;
+}
+
+#input-btn {
+    background: var(--saveBtn);
+}
+#input-btn:hover {
+    background: var(--saveBtnDark);
+}
+
+#delete-btn {
     margin-left: 5px;
-    background: #ea4848;
+    background: var(--deleteBtn);
 }
-#delete-btn:hover{
-    background: #9d0a0a;
+#delete-btn:hover {
+    background: var(--deleteBtnDark);
 }
 
-#ul-el{
+#ul-el {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-#li-el{
-    margin: 5px;
-}
-
-#a-el{
-    width: max-content;
-    color: #007306;
-}
-#a-el:hover{
-    font-weight: bold;
-    color: #5393F1;
-}
-
-#message{
-    font-family: 'iceland', sans-serif;
+.msg {
+    font-family: "iceland", sans-serif;
     font-weight: 600;
     font-size: 20px;
+    cursor: pointer;
+    margin-top: 5px;
+
+    padding: 2px;
+    border: 2px solid var(--saveBtnDark);
+    border-radius: 3px;
+    margin: 0;
+    text-align: center;
+}
+
+#msg-del {
+    background: var(--msgLastDel);
+}
+
+#all-del {
+    background: var(--deleteBtn);
+}
+
+#msg-tab-added {
+    background: var(--msgTab);
+}
+
+#msg-new-link {
+    background: var(--saveBtn);
+}
+
+.li-el {
+    margin: 0px;
+}
+
+.delete-link {
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.a-el {
+    width: max-content;
+    color: var(--linkCol);
+}
+.a-el:hover {
+    /* font-weight: bold; */
+    color: var(--saveBtn);
+}
+
+.arrow {
+    color: var(--arrowCol);
 }
