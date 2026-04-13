@@ -13,8 +13,25 @@ const importFile = document.getElementById("import-file");
 // Initialize
 function init() {
     chrome.storage.local.get(["smar"], (result) => {
-        links = result.smar || [];
-        render(links);
+        if (result.smar) {
+            links = result.smar;
+            render(links);
+        } else {
+            // Migration for old users (localStorage -> chrome.storage.local)
+            const legacyLinks = localStorage.getItem("smar");
+            if (legacyLinks) {
+                try {
+                    links = JSON.parse(legacyLinks);
+                    updateStorage();
+                    // Optional: localStorage.clear(); 
+                } catch (e) {
+                    links = [];
+                }
+            } else {
+                links = [];
+            }
+            render(links);
+        }
     });
 }
 
