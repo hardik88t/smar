@@ -1,25 +1,31 @@
-# smar (स्मर्) - Smart Link Manager
+# smar (स्मर्) - Smart Link Manager v2.0
 
-**smar** is a browser extension for saving links and tabs with a single click.
+**smar** is a powerful, lightweight browser extension designed to help you manage your web discoveries effortlessly.
 
-## Features
-- **Save Current Tab**: Click "Save" with an empty input to store the current page.
-- **Save Manual Link**: Type a URL and click "Save".
-- **One-Click Open**: Click the logo to open all saved links in new tabs.
-- **Manage Links**: Delete individual links or clear all (double-click "Clear All").
-- **Modern MV3**: Built using Manifest V3 and `chrome.storage` API for reliability.
+## ✨ New in v2.0
+- **Right-Click to Save**: Save any link, image, or current page via the context menu.
+- **Dynamic Search**: Instantly find saved links with real-time filtering.
+- **Export/Import**: Backup your links as JSON files or transfer them between devices.
+- **Modern Redesign**: Clean, card-based UI with full **Dark Mode** support.
+- **Smooth UX**: Added animations and better feedback messages.
 
-## Installation
-1. Clone this repository.
-2. Open `chrome://extensions/` in your browser.
-3. Enable "Developer mode".
-4. Click "Load unpacked" and select the project folder.
+## 🚀 Features
+- **One-Tap Save**: Click "Save" with an empty input to store the current tab.
+- **Bulk Open**: Click the logo to open all your saved links in new tabs.
+- **Safe Storage**: Uses `chrome.storage.local` for persistent, asynchronous data management.
+- **Easy Cleanup**: Delete individual links or double-click to clear everything.
 
-## Tech Stack
-- HTML5, CSS3 (Poppins font)
-- JavaScript (ES6+)
-- Chrome Extension API (MV3)
+## 🛠️ Installation
+1. Download or clone this repository.
+2. Navigate to `chrome://extensions/`.
+3. Toggle **Developer mode** (top right).
+4. Click **Load unpacked** and select the extension folder.
+
+## 💻 Tech Stack
+- **HTML5/CSS3**: Custom properties for Dark Mode, Flexbox layout.
+- **JavaScript**: ES6+, Async Storage API, Context Menu API, File Reader API.
+- **Design**: Poppins Typography, modern card-based architecture.
 
 ---
 Created by [hardik88t](https://github.com/hardik88t). 
-Initially developed as part of a [FreeCodeCamp](https://www.freecodecamp.org) learning journey.
+A smart way to remember the web.

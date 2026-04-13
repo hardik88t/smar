@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="asset/css/style.css">
-        <title>smar</title>
+        <title>smar - Smart Links</title>
     </head>
-
     <body>
         <div id="container">
-            <input type="text" id="input-el" placeholder="Type URL or leave empty for current tab">
+            <header>
+                <img id="logo-img" src="asset/img/smar_.png" alt="smar logo" title="Open All Links">
+                <div class="actions">
+                    <button id="export-btn" title="Export as JSON">↑</button>
+                    <button id="import-btn" title="Import JSON">↓</button>
+                    <input type="file" id="import-file" style="display:none" accept=".json">
+                </div>
+            </header>
 
-            <div id="buttons-container">
-                <img id="logo-img" src="asset/img/smar_.png" alt="smar - smart way to save links" />
-                <button type="button" id="input-btn">Save</button>
-                <button type="button" id="delete-btn">Clear All</button>
+            <div class="input-group">
+                <input type="text" id="input-el" placeholder="Paste URL or leave empty for tab">
+                <button id="input-btn">Save</button>
             </div>
+
+            <div class="search-group">
+                <input type="text" id="search-el" placeholder="Search saved links...">
+            </div>
+
             <div id="message"></div>
         </div>
+
         <ul id="ul-el"></ul>
+
+        <div class="footer">
+            <button id="delete-btn" class="danger">Double-click to Clear All</button>
+        </div>
 
         <script src="asset/js/index.js"></script>
     </body>
-
 </html>

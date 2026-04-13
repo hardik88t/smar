@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
     "name": "smar",
-    "version": "1.6",
-    "description": "smar - a smart way to manage links",
+    "version": "2.0",
+    "description": "smar - the smarter way to manage your links and tabs",
     "short_name": "smar",
     "author": "hardik88t",
     "homepage_url": "https://hardik88t.github.io/smar/",
@@ -16,9 +16,13 @@
         "default_popup": "index.html",
         "default_icon": "asset/img/s_.png"
     },
+    "background": {
+        "service_worker": "background.js"
+    },
     "permissions": [
         "storage",
-        "activeTab"
+        "activeTab",
+        "contextMenus"
     ],
     "offline_enabled": true
 }

@@ -1,109 +1,187 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --card-bg: #f8f9fa;
+    --border-color: #e0e0e0;
+    --primary-color: #5393f1;
+    --danger-color: #ff5252;
+    --success-color: #4caf50;
+    --shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #1a1a1a;
+        --text-color: #f0f0f0;
+        --card-bg: #2d2d2d;
+        --border-color: #444444;
+        --shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+}
 
 body {
     margin: 0;
-    padding: 15px;
+    padding: 20px;
     font-family: 'Poppins', sans-serif;
-    width: 400px;
-    background: #fdfdfd;
+    width: 380px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s;
 }
 
 #container {
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
 
-#input-el {
-    width: 100%;
-    padding: 12px;
-    box-sizing: border-box;
-    border: 2px solid #5393F1;
-    border-radius: 4px;
-    outline: none;
-    font-size: 14px;
-}
-
-#buttons-container {
+header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin-top: 10px;
+    align-items: center;
 }
 
 #logo-img {
-    width: 100px;
+    width: 80px;
     cursor: pointer;
-    transition: transform 0.2s;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
 }
 
 #logo-img:hover {
     transform: scale(1.05);
 }
 
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+.actions button {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.input-group, .search-group {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 2px solid var(--border-color);
+    border-radius: 6px;
+    background: var(--card-bg);
+    color: var(--text-color);
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    border-color: var(--primary-color);
+}
+
 button {
-    padding: 8px 16px;
+    background: var(--primary-color);
     color: white;
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    padding: 10px 18px;
+    border-radius: 6px;
     font-weight: 600;
+    cursor: pointer;
     transition: opacity 0.2s;
+    white-space: nowrap;
 }
 
 button:active {
     opacity: 0.8;
 }
 
-#input-btn {
-    background-color: #5393F1;
-    flex-grow: 1;
-    margin: 0 5px;
-}
-
-#delete-btn {
-    background-color: #ea4848;
-}
-
 #ul-el {
     list-style: none;
     padding: 0;
-    margin: 15px 0 0 0;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 350px;
+    overflow-y: auto;
 }
 
 .li-el {
-    background: white;
-    margin-bottom: 8px;
-    padding: 10px;
-    border: 1px solid #eee;
-    border-radius: 4px;
+    background: var(--card-bg);
+    padding: 12px;
+    border-radius: 8px;
     display: flex;
     align-items: center;
-    font-size: 13px;
-    word-break: break-all;
+    gap: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+    transition: transform 0.2s;
+}
+
+.li-el:hover {
+    transform: translateY(-2px);
 }
 
 .delete-link {
-    color: #ea4848;
-    margin-right: 10px;
+    background: var(--danger-color);
+    color: white;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 12px;
     cursor: pointer;
-    font-weight: bold;
-    user-select: none;
-}
-
-.delete-link:hover {
-    color: #9d0a0a;
+    flex-shrink: 0;
 }
 
 .a-el {
-    color: #333;
+    color: var(--text-color);
     text-decoration: none;
-    flex-grow: 1;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    width: 100%;
 }
 
 .a-el:hover {
-    color: #5393F1;
+    color: var(--primary-color);
 }
 
 #message {
-    min-height: 40px;
+    min-height: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.footer {
+    margin-top: 15px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+}
+
+.danger {
+    background: transparent;
+    border: 1px solid var(--danger-color);
+    color: var(--danger-color);
+    width: 100%;
+    font-size: 12px;
+}
+
+.danger:hover {
+    background: var(--danger-color);
+    color: white;
 }
