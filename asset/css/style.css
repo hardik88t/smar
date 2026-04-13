@@ -1,104 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
-body{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
     margin: 0;
-    padding: 10px;
+    padding: 15px;
     font-family: 'Poppins', sans-serif;
-    width: 450px;
-    /* background: #f5f5f5; */
+    width: 400px;
+    background: #fdfdfd;
 }
 
-#container{
-    /* position:static */
-    position: relative;
-    padding-bottom: 0%;
-
-}
-
-
-#input-el{
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid ;
-}
-
-#buttons-container{
+#container {
     display: flex;
-    justify-content: end;
-    width: auto;
+    flex-direction: column;
 }
 
-/* #profile-link */
+#input-el {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 2px solid #5393F1;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+}
+
+#buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
 
 #logo-img {
-    /* logo design */
-    width: 128px;
-    object-fit: contain;
-}
-#logo-img:hover{
-    cursor: pointer;  
-    width: 133px;
-}
-/* onclick redirect to link */
-#logo-img:onclick{
-    /* redirect to link */
-    window.location.href = "https://www.google.com/";
-}
-
-button{
-    background: #5393F1;
-    padding: 10px 20px ;
-    color: #fff;
-    border: none;
+    width: 100px;
     cursor: pointer;
-    font-weight: bold;
-    border: 3px solid #5393F1;
-    border-radius: 5px;
-    /* width: 70px; */
-    /* height: 30px; */
-    margin: 5px;
-    justify-content: center;
-    object-fit: contain;
+    transition: transform 0.2s;
 }
 
-#input-btn{
-    background: #5393F1;
-}
-#input-btn:hover{
-    background: #0c4396;
-
+#logo-img:hover {
+    transform: scale(1.05);
 }
 
-#delete-btn{
-    margin-left: 5px;
-    background: #ea4848;
-}
-#delete-btn:hover{
-    background: #9d0a0a;
+button {
+    padding: 8px 16px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: opacity 0.2s;
 }
 
-#ul-el{
+button:active {
+    opacity: 0.8;
+}
+
+#input-btn {
+    background-color: #5393F1;
+    flex-grow: 1;
+    margin: 0 5px;
+}
+
+#delete-btn {
+    background-color: #ea4848;
+}
+
+#ul-el {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 15px 0 0 0;
 }
 
-#li-el{
-    margin: 5px;
+.li-el {
+    background: white;
+    margin-bottom: 8px;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    word-break: break-all;
 }
 
-#a-el{
-    width: max-content;
-    color: #007306;
-}
-#a-el:hover{
+.delete-link {
+    color: #ea4848;
+    margin-right: 10px;
+    cursor: pointer;
     font-weight: bold;
+    user-select: none;
+}
+
+.delete-link:hover {
+    color: #9d0a0a;
+}
+
+.a-el {
+    color: #333;
+    text-decoration: none;
+    flex-grow: 1;
+}
+
+.a-el:hover {
     color: #5393F1;
 }
 
-#message{
-    font-family: 'iceland', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
+#message {
+    min-height: 40px;
 }

@@ -1,11 +1,25 @@
-# [![smar](https://github.com/hardik88t/smar/blob/main/asset/img/smar_.png)](https://github.com/hardik88t/smar)
+# smar (स्मर्) - Smart Link Manager
 
-## smar is a Browser Extension For Saving Links & Tabs. <br/> smar ~ " स्मर " ( Hindi ) meaning " to remember ".
+**smar** is a browser extension for saving links and tabs with a single click.
+
+## Features
+- **Save Current Tab**: Click "Save" with an empty input to store the current page.
+- **Save Manual Link**: Type a URL and click "Save".
+- **One-Click Open**: Click the logo to open all saved links in new tabs.
+- **Manage Links**: Delete individual links or clear all (double-click "Clear All").
+- **Modern MV3**: Built using Manifest V3 and `chrome.storage` API for reliability.
+
+## Installation
+1. Clone this repository.
+2. Open `chrome://extensions/` in your browser.
+3. Enable "Developer mode".
+4. Click "Load unpacked" and select the project folder.
+
+## Tech Stack
+- HTML5, CSS3 (Poppins font)
+- JavaScript (ES6+)
+- Chrome Extension API (MV3)
+
 ---
-This is a simple Browser Extension For Saving Links
-This is a Part Of my journy to learn [JavaScript](https://www.youtube.com/watch?v=jS4aFq5-91M) 😄, With [freecodecamp.org](https://www.freecodecamp.org) ([YT channel](https://www.youtube.com/c/Freecodecamp)). <br/>
-By founder of [scrimba.com](https://scrimba.com/learn/learnjavascript). <br/>
-![JavaScript](http://3con14.biz/code/_data/js/intro/js-logo.png)
-
-# By [hardik88t](https://github.com/hardik88t)
--15/06/2022
+Created by [hardik88t](https://github.com/hardik88t). 
+Initially developed as part of a [FreeCodeCamp](https://www.freecodecamp.org) learning journey.
